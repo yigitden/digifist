@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Avantgarde;
+    src: url("../assets/fonts/Avantgarde.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: Avenir;
+    src: url("../assets/fonts/Avenir.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+  }

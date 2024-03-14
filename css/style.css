@@ -1,0 +1,136 @@
+@import "./fonts.css";
+@import "./swiper-bundle.min.css";
+
+:root {
+  --c-primary: #000000;
+  --c-secondary: #ffffff;
+  --c-text: #666666;
+  --c-blue: #99C3CC;
+  --c-pink: #CC9999;
+  --c-purple: #CB99CC;
+  --c-green: #A6CC99;
+
+  --font-family--primary: Avenir, sans-serif;
+  --font-family--secondary: Avantgarde, sans-serif;
+
+  --spacer-1: 4px;
+  --spacer-2: 8px;
+  --spacer-3: 16px;
+  --spacer-4: 32px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family--primary);
+}
+h1 {
+  font-size: 31.25px;
+  line-height: 40.62px;
+}
+.section-tile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  @media (max-width: 1023px) {
+    .section-tile {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.desktop-only {
+  @media (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.image {
+  img {
+    max-width: 100%;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 120px;
+
+  .link {
+    border-bottom: 1px solid var(--c-primary);
+    width: fit-content;
+    padding-bottom: calc(var(--spacer-1) * 1.5);
+  }
+  .title {
+    font-family: var(--font-family--secondary);
+  }
+  .description {
+    color: var(--c-text);
+    margin: calc(var(--spacer-1) + var(--spacer-2)) 0 var(--spacer-4) 0;
+  }
+}
+.product-slider {
+  display: grid;
+}
+.product-card {
+  max-width: 230px;
+  .bottom {
+    margin-top: 9px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacer-1);
+  }
+  .image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 230 / 310;
+  }
+  .name {
+    font-size: 12.8px;
+    line-height: 20.48px;
+  }
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .price {
+    font-size: 12.8px;
+    line-height: 20.48px;
+  }
+  .colors {
+    display: flex;
+    gap: var(--spacer-2);
+    .color {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: var(--c-blue);
+    }
+  }
+
+}
+/* swiper styling */
+.swiper {
+  margin-left: inherit;
+  margin-right: inherit;
+}
+
+.swiper-button-next {
+  --swiper-navigation-top-offset: 157px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--c-primary);
+}
+
+.swiper-button-next:after {
+  --swiper-navigation-size: 13px;
+}
