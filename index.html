@@ -3,14 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
     <title>Digifist Case</title>
   </head>
   <body>
     <main>
       <section class="section-tile">
-        <div class="image"></div>
-        <div class="content"></div>
+        <div class="image">
+          <picture>
+            <source
+              media="(max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.1)"
+              srcset="/assets/images/image-small.png"
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.1)"
+              srcset="/assets/images/image-medium.png"
+              type="image/png"
+            />
+            <img
+              srcset="/assets/images/image-medium.png"
+              alt="Digifist"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div class="content">
+          <h1 class="title">
+            Everyday items, we have something to suit every occasion.
+          </h1>
+          <p class="desktop-only description">
+            At suspendisse augue lectus arcu, accumsan ut sit posuere vitae sit
+            tincidunt semper eu proin leo gravida cursus.
+          </p>
+          <p class="link">Shop All Everyday Items.</p>
+          <div class="product-slider">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <img
+                      srcset="/assets/images/product-1.png"
+                      alt="Product 1"
+                      class="image"
+                    />
+                    <div class="bottom">
+                      <div class="name">365 Signature Hoodie</div>
+                      <div class="details">
+                        <div class="price">€33.95</div>
+                        <div class="colors">
+                          <div class="color"></div>
+                          <div class="color"></div>
+                          <div class="color"></div>
+                          <div class="color"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <img
+                      srcset="/assets/images/product-2.png"
+                      alt="Product 2"
+                      class="image"
+                    />
+                    <div class="bottom">
+                      <div class="name">Organic Skinny High Waist Jeans</div>
+                      <div class="details">
+                        <div class="price">€33.95</div>
+                        <div class="colors">
+                          <div class="color"></div>
+                          <div class="color"></div>
+                          <div class="color"></div>
+                          <div class="color"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <img
+                      srcset="/assets/images/product-3.png"
+                      alt="Product 3"
+                      class="image"
+                    />
+                    <div class="bottom">
+                      <div class="name">Organic Skinny High Waist Jeans</div>
+                      <div class="details">
+                        <div class="price">€33.95</div>
+                        <div class="colors">
+                          <div class="color"></div>
+                          <div class="color"></div>
+                          <div class="color"></div>
+                          <div class="color"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   </body>
