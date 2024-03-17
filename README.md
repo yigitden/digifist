@@ -61,8 +61,9 @@
 # Previews 
  
  You can see some screenshots of test devices. I used Safari as browser in iPad and iPhone and Chrome as browser in Samsung Phones and Tablets.
+ I tested this project in Browserstack.com with real devices.
 
- Test Link [Test] (https://digifist-gray.vercel.app/)
+ Test Link https://digifist-gray.vercel.app/
 <center>
 
 ## iPhone 14
