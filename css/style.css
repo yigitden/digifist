@@ -71,6 +71,7 @@ h1 {
   margin-top: -54%;
   z-index: 1;
   color: var(--c-secondary);
+  padding-bottom: var(--spacer-4);
 }
 
 .section-tile__content .section-tile__content-text {
@@ -235,6 +236,7 @@ h1 {
   .section-tile__content {
     color: var(--c-primary);
     margin-top: 96px;
+    padding-bottom: 0;
   }
 
   .section-tile__content .section-tile__content-title {
